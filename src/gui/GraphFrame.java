@@ -217,7 +217,7 @@ public class GraphFrame extends JFrame {
 						break;
 					}
 				}
-				if(!foundNode && !bChangeEdge.isSelected()){
+				if(!foundNode && !bChangeEdge.isSelected() && !bShortestPath.isSelected()){
 					for(int i=0; i<dg.getGraph().getNumOfNodes();i++){
 						n=dg.getGraph().getNodeAt(i);
 						if(n.isActiveNode()){
